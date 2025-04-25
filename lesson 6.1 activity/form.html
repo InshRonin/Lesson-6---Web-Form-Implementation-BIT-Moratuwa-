@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+<style>
+    form{
+        display: flex;
+        flex-direction: column;
+        max-width: 800px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+
+    .form1{
+        display: flex;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .form1 label{
+        width: 150px;
+        text-align: left;
+        margin: 0 100px;
+    }
+
+    .form1 {}
+</style>
+</head>
+<body>
+         <h1 style="text-align: center; margin: 40px 0;">Account Information</h1>
+        <form action="/action_page.php" method="post" >
+            <div class="form1">
+            <label for="Login-name">Login Name*</label>
+            <input type="text" name="Login-name" id="Login-name" size="10px" >
+            </div>
+
+
+            <div class="form1">
+            <label for="password">Password*</label>
+            <input type="password" name="password" id="password" size="10px" >
+            </div>
+            
+            <div class="form1">
+            <label for="password">Confirm Password*</label>
+            <input type="password" name="password" id="password" size="10px" >
+            </div>
+           
+            <div class="form1">
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" >
+            </div>
+            
+            <div class="form1">
+            <label for="email">Confirm Email</label>
+            <input type="email" name="email" id="email" >
+            </div>
+        </form>
+    
+
+        <h1 style="text-align: center; margin: 40px 0;">Contact Information</h1>
+
+        <form action="/action.php" method="post">
+            <div class="form1">
+                <label for="fname">First Name*</label>
+                <input type="text" name="FirstName" id="fname">
+            </div>
+
+            <div class="form1">
+                <label for="lname">Last Name*</label>
+                <input type="text" name="LastName" id="lname">
+            </div>
+
+            <div class="form1">
+                <label for="address1">Address 1*</label>
+                <input type="text" name="address1" id="address1">
+            </div>
+
+            <div class="form1">
+                <label for="address2">Address 2</label>
+                <input type="text" name="address2" id="address2">
+            </div>
+
+            <div class="form1">
+                <label for="city">City</label>
+                <input type="text" name="city" id="city">
+            </div>
+
+            <div class="form1">
+                <label for="address1">Select province*</label>
+                <select name="province" id="province">
+                    <option value="central">Central Province</option>
+                    <option value="eastern">Eastern Province</option>
+                    <option value="northern">Northern Province</option>
+                    <option value="north_central">North Central Province</option>
+                    <option value="north-western">North Western Province</option>
+                    <option value="sabaragamuwa">Sabaragamuwa Province</option>
+                    <option value="southern">Southern Province</option>
+                    <option value="uva">Uva Province</option>
+                    <option value="western">Western Province</option>
+                </select>
+            </div>
+
+            <div class="form1">
+                <label for="zip">Zip*</label>
+                <input type="number" name="zipcode" id="zip">
+            </div>
+
+            <div class="form1">
+                <label for="country">Country*</label>
+                <input type="text" name="country" id="country">
+            </div>
+
+            <div class="form1">
+                <label for="gender">Gender*</label>
+                
+                <input type="radio" name="gender1" id="gender1" value="male">
+                <label for="gender1" style="margin: 0;">Male</label>
+
+                <input type="radio" name="gender2" id="gender2" value="female">
+                <label for="gender2" style="margin: 0;">Female</label>
+            </div>
+        </form>
+
+
+        <h1 style="text-align: center; margin: 40px 0;">Misc. Information</h1>
+        <form action="/action.php" method="post">
+            <div class="form1">
+                <label for="income">Annual Household Income</label>
+                <select name="income" id="income">
+                    <option value="thousand">10000 LKR</option>
+                    <option value="more_than_thousand">More than 10000 LKR</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form1">
+                <label for="interest">Interests</label>
+
+                <input type="checkbox" name="shopping" id="shopping" value="shopping">
+                <label for="shopping" style="margin: 0;">Shopping fashion</label>
+
+                <input type="checkbox" name="sports" id="sports" value="sports">
+                <label for="sports" style="margin: 0;">Sports</label>
+
+                <input type="checkbox" name="tavel" id="travel" value="travel">
+                <label for="travel" style="margin: 0;">Travel</label>
+            </div>
+
+            <div class="form1">
+                <label for="Eyecolor">Eye color</label>
+
+                <input type="checkbox" name="red" id="red" value="red">
+                <label for="red" style="margin: 0;">Red</label>
+
+                <input type="checkbox" name="green" id="green" value="green">
+                <label for="green" style="margin: 0;">Green</label>
+
+                <input type="checkbox" name="brown" id="brown" value="brown">
+                <label for="brown" style="margin: 0;">Brown</label>
+
+                <input type="checkbox" name="blue_gold" id="blue_gold" value="blue_gold">
+                <label for="blue_gold" style="margin: 0;">Blue Gold</label>
+            </div>
+        </form>
+
+        <input type="submit" style="margin-left: 110px;">
+        <input type="reset">
+</body>
+</html>
